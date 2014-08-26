@@ -1,0 +1,262 @@
+// some global elements -------------------------------
+input[type="text"],input[type="select"], input[type="button"], button, textarea, select {
+outline: none;
+box-shadow:none !important;
+}
+img {
+	width:100%;
+}
+
+// override navbar styles -------------------------------
+.navbar {
+	background-color: #FE4300;
+	border:0;
+}
+.navbar .container {
+	width:100%;
+	@media (min-width: $screen-sm-min) {
+		width:770px;
+	}
+	@media (min-width: $screen-md-min) {
+		width:990px;
+	}
+	@media (min-width: $screen-lg-min) {
+		width:1120px;
+	}
+}
+.navbar-nav > li > a {
+	color: #fff;
+	font-size:14px;
+	padding: 20px 15px;
+}
+.navbar-nav > li > a:hover {
+	background-color:transparent;
+	color: #FE4300;
+	@media (min-width: $screen-sm-min) {
+		color: #FFF;
+		border-bottom:3px solid #fff;
+	}
+}
+.navbar-collapse {
+	background-color: $gray-dark;
+	max-height: 376px;
+	@media (min-width: $screen-sm-min) {
+		background-color: #FE4300;
+	}
+}
+
+// layout grid adjustments -------------------------------
+@media (min-width: $screen-md-min) {
+	.col-md-2-special {
+		width:20%; // centers 5 columns 
+	}
+}
+.work-grid-sm { // recent work grid
+	width:85%;
+	margin:0 auto;
+}
+@media (min-width: 420px) {
+	.work-grid-sm {
+		width:75%;
+	}
+}
+@media (min-width: $screen-sm-min) {
+	.work-grid-sm {
+		width:50%;
+		float:left;
+	}
+}
+@media (min-width: $screen-md-min) {
+	.work-grid-sm {
+		width:33%;
+		float:left;
+	}
+}
+
+// tiger stripes - bg images, padding and stripe specific styles -------------------------------
+.stripe {
+	padding:4em 0;
+}
+@media (min-width: 940px) {
+	.stripe {
+		padding:8em 0;
+	}
+}
+.stripe-gray {
+	background-color: #F6F9FA;
+}
+.stripe-dark {
+	background-color: #222;
+	color:#e4e4e4;
+	h2 {
+		color:#e4e4e4;
+	}
+}
+.stripe-orange {
+	background-color: #FE4300;
+	color:#FFF;
+	h2 {
+		color:#fff;
+	}
+}
+.stripe-ribbon {
+	padding:1.5em 0;
+}
+.stripe-hero {
+	background-image: url(../img/hero-img-screen.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding:26% 0 90%;
+	
+	@media (min-width: $screen-xs-min) {
+		background-image: url(../img/hero-img-xs.jpg);
+		padding:13% 0 65%;
+	}
+	@media (min-width: $screen-sm-min) {
+		background-image: url(../img/hero-img-lg.jpg);
+		padding:12% 0 45%;
+	}
+}
+.recent-work-bg {
+	background-image: url(../img/recent-work-splash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-bottom: 22%;
+	padding-top: 20%;
+}
+.stripe-scalp {
+	@media (min-width: $screen-sm-min) {
+		padding-top:2em;
+	}
+}
+.x1labs-bg {
+	background-image: url(../img/x1labs-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+.subhead {
+	margin-top:-1.2em;
+	@media (min-width: $screen-md-min) {
+		font-size: 26px;
+	}
+}
+
+// adjust positioning of splash message -------------------------------
+.splash {
+	line-height:1.25;
+	margin:0 auto;
+	font-size:30px;
+	width:95%;
+	
+	@media (min-width: $screen-xs-min) {
+		font-size:35px;
+		width:86%;
+	}
+	@media (min-width: $screen-sm-min) {
+		font-size:46px;
+		width:670px;
+	}
+	@media (min-width: $screen-md-min) {
+		font-size:50px;
+		display:block;
+		width:80%;
+	}
+	@media (min-width: $screen-lg-min) {
+		font-size:55px;
+	}
+}
+
+// adds on to thumbnail styles for profile (leadership peeps) -------------------------------
+.thumbnail-profile {
+	background-color: #fff;
+	border:1px solid $gray-lighter;
+	padding:3.3em;
+	margin: 0 auto;
+	img {
+		padding-bottom:1em;
+	}
+	@media (min-width: 420px) {
+		width:80%;
+	}
+	@media (min-width: $screen-sm-min) {
+		width:100%;
+		background-color: inherit;
+		border:none;
+		padding:0;
+		h3 {
+			font-size:24px;
+		}
+	}
+}
+
+// adjust form styles and layout -------------------------------
+.contact-form {
+	margin-bottom:0.5em;
+}
+.contact-letter{
+	border:1px solid #e8e8e8;
+	padding:15px;
+	margin: 0 auto 1em;
+	max-width: 700px;
+	background-color: #fff;
+}
+.contact-letter input,
+.contact-letter textarea {
+	border:none;
+	box-shadow:none;
+}
+.contact-letter input {
+	border-bottom:1px solid #efefef;
+}
+.contact-letter input:focus, {
+	border-bottom:1px solid #FE4300;
+}
+
+.contact-letter textarea {
+	margin-top:40px;
+}
+.contact-letter label {
+	font-size:15px;
+	color:#FE4300;
+}
+.profile-container{
+	padding-bottom:20px;
+}
+
+// layout utilities -------------------------------
+.pbs {
+	padding-bottom:0.5em;
+}
+.pbm {
+	padding-bottom:1em;
+}
+.pbl {
+	padding-bottom:2em;
+}
+.pbxl {
+	padding-bottom:3em;
+}
+.pts {
+	padding-top:0.5em;
+}
+.ptm {
+	padding-top:1em;
+}
+.ptl {
+	padding-top:2em;
+}
+.ptxl {
+	padding-top:3em;
+}
+
+
+
+
+
+
+
